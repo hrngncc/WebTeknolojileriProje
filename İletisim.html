@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="bootstrap.js"></script>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg nav-bg ">
+            <div class="container">
+                <a class="navbar-brand" href="webproje.html">
+                    <img class="img-fluid foto" src="resimler/IMG_20220507_195509-removebg-preview.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link active" aria-current="page" href="ozgecmis.html">Özgeçmiş</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="Sehrim.html">Şehrim</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="Miras.html">Mirasımız</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="İlgialanlarım.html">İlgi Alanlarım</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="İletisim.html">İletişim</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="Login.html">Giriş yap</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+    </div>
+    <section class="site-section ">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class=" section-heading text-center">
+                        <h1 class="  mt-3">
+                            <center class="iletisim1">İLETİŞİM</center>
+                        </h1>
+                        <form action="İletisim.php" method="post" novalidate name="form">
+                            <div class="form-group">
+                                <div class="row mt-4">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-6">
+                                        <input id="ad" type="text" class="form-control" placeholder="Adınız...." name="ad">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row mt-4">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-6">
+                                        <input id="soyad" type="text" class="form-control" placeholder="Soyadınız">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row  mt-4">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="dogum" name="doğum" placeholder="Doğum Tarihinizi Giriniz" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-6">
+                                    <select class="form-control" name="Eğitim" id="egitim">
+                                  <option>İlkokul</option>
+                                       <option >Ortaokul</option>
+                                       <option>Lise</option>
+                                       <option >Üniversite</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row mt-4">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-6 mx-2">
+                                        <input type="text" id="email" class="form-control" placeholder="Email Adresini Giriniz" name="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <button class="btn btn-dark" type="submit" id="submit">Gönder</button>
+                                <div class="mx-2"></div>
+                                <button class="btn btn-dark" type="reset">Temizle</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function kontrol(e) {
+            var isim = document.getElementById("ad").value;
+            var soyad = document.getElementById("soyad").value;
+            var dogum = document.getElementById("dogum").value;
+            var egitim = document.getElementById("egitim").value;
+            var email = document.getElementById("email").value;
+            var sayac = 0;
+            if (isim == null || isim == "" || soyad == null || soyad == "" || dogum == null || dogum == "" || email == null || email == "") {
+                alert("Bütün Alanları Doldurmak Zorunludur.!");
+                e.preventDefault();
+                return false;
+            }
+        }
+        document.getElementById("submit").addEventListener("click", kontrol);
+    </script>
+    </div>
+
+
+
+</body>
