@@ -1,0 +1,322 @@
+.foto {
+    height: 100px;
+}
+
+.photo {
+    height: 150px;
+}
+
+.ayrac {
+    font-size: 25px;
+    margin: 0px 20px;
+    color: blue;
+}
+
+.nav-bg {
+    background-color: rgb(68, 63, 63);
+}
+
+.ust-kisim {
+    background-image: url(resimler/road-g6a5f59efe_1920.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ust-kisim-ozgecmis {
+    background-image: url(resimler/beach-g5e6c96e6e_1920.jpg);
+    height: 200vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ust-kisim-mirasimiz {
+    background-image: url(resimler/beach-g5e6c96e6e_1920.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ust-kisim-sehrim {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ust-kisim-ilgialanlarim {
+    background-color: darkgray;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav-item a:hover {
+    color: rgb(238, 233, 240);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    color: white;
+}
+
+@media screen and (max-width:992px) {
+    .ayrac {
+        display: none;
+    }
+    #login {
+        width: 80%;
+    }
+}
+
+.hobilerim {
+    background-color: darkgrey;
+}
+
+.basketphoto {
+    height: 300px;
+}
+
+.poemphoto {
+    height: 300px;
+}
+
+.bookphoto {
+    height: 300px;
+}
+
+.movie {
+    text-decoration: none;
+    color: black;
+}
+
+.Spor {
+    background-color: darkgray;
+    background-image: url(resimler/johny-goerend-x3WQMj5QkEE-unsplash.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.egitim-ler {
+    text-align: left;
+    margin: 20px;
+}
+
+.bilgisayar {
+    text-align: left;
+    float: left;
+    margin: 10px;
+    font-family: "Lobster";
+}
+
+.sakarya {
+    text-align: left;
+    margin: 10px;
+    font-family: "Great-Vibes";
+}
+
+@font-face {
+    font-family: "Great-Vibes";
+    src: local("Great-Vibes"), url(GreatVibes-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: local("Lobster"), url(Lobster_1.3.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Kaushan-Script";
+    src: local("Kaushan-Script"), url(KaushanScript-Regular.otf) format("opentype");
+}
+
+.sınıf {
+    font-family: "Kaushan-Script";
+    margin: 10px;
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: local("Pacifico"), url(Pacifico.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Spiderman";
+    src: local("Spiderman"), url("The\ Amazing\ Spider-Man.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "King";
+    src: local("King"), url("VintageKing.ttf") format("truetype");
+}
+
+.tarih {
+    font-family: "Pacifico";
+    margin: 10px;
+}
+
+.beceri {
+    text-align: center;
+    font-family: "King";
+    margin: 20px;
+}
+
+.beceriler {
+    text-align: center;
+    font-family: "Great-Vibes";
+}
+
+.bilgi {
+    font-family: "Pacifico";
+}
+
+.location {
+    font-family: "Great-Vibes";
+}
+
+.mail {
+    font-family: "Kaushan-Script";
+}
+
+.kale1 {
+    font-family: "Great-Vibes";
+    text-align: center;
+}
+
+.miras1 {
+    float: left
+}
+
+.miras2 {
+    text-overflow: scroll;
+}
+
+.kale2 {
+    width: 100%;
+    margin: 0px;
+}
+
+.mirasimiz {
+    font-family: "Great-Vibes";
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 500px;
+}
+
+.kale3 {
+    width: 100%;
+}
+
+.kale4 {
+    width: 100%;
+    height: 45%;
+}
+
+.kale5 {
+    width: 100%;
+    height: 45%;
+}
+
+.Gaziantep {
+    width: 400px;
+}
+
+.sehir1 {
+    margin: auto;
+}
+
+.antep {
+    font-family: "Great Vibes";
+}
+
+.antep2 {
+    font-family: "Kaushan-Script";
+}
+
+.antep3 {
+    width: 100%;
+}
+
+.bahçe {
+    font-family: "Kaushan-Script";
+}
+
+.museum {
+    font-family: "Great-Vibes";
+}
+
+.savas {
+    font-family: "Pacifico";
+}
+
+.bilgi2 {
+    float: left;
+    overflow: auto;
+    font-family: "Lobster";
+}
+
+.muse {
+    width: 60%;
+}
+
+.bilgi3 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.milli {
+    width: 60%;
+}
+
+.bilgi4 {
+    font-family: "Great-Vibes";
+    font-size: x-large;
+}
+
+.slider {
+    margin-top: 130px;
+}
+
+.hobies {
+    font-family: "Great-Vibes";
+}
+
+.spidey {
+    font-family: "Lobster";
+}
+
+#login {
+    margin: auto;
+}
+
+.ogrenci {
+    margin: auto;
+}
+
+.sifresi {
+    margin: auto;
+}
+
+.tasma {}
+
+.favori {
+    font-family: "Great-Vibes";
+}

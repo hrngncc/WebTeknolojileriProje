@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="bootstrap.js"></script>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg nav-bg ">
+            <div class="container">
+                <a class="navbar-brand" href="webproje.html">
+                    <img class="img-fluid foto" src="resimler/IMG_20220507_195509-removebg-preview.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link active" aria-current="page" href="ozgecmis.html">Özgeçmiş</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="Sehrim.html">Şehrim</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="Miras.html">Mirasımız</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="İlgialanlarım.html">İlgi Alanlarım</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="İletisim.html">İletişim</a>
+                            <span class="ayrac">|</span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3">
+                            <a class="nav-link" href="Login.html">Giriş yap</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container text-black text-center">
+            <form id="Login" action="Login.php" method="POST" id="Login" novalidate="" name="Login">
+                <h3 style="text-align: center;">Login</h1>
+                    <br>
+                    <p><b>Kullanıcı Adı</b>
+                        <input id="id" name="id" class="form-control px-4 py-4 shadow ogrenci " type="email" required placeholder="kullanıcı adınızı giriniz" style="width: 40%;">
+                    </p>
+                    <br>
+                    <p><b>Şifre</b>
+                        <input id="sifre" name="sifre" class="form-control px-4 py-4 shadow sifresi" type="password" required placeholder="şifrenizi giriniz" style="width: 40%;">
+                    </p>
+                    <br>
+                    <p style=" text-align: center; ">
+                        <button type="submit " onclick="a() " class="btn btn-dark ">Giriş</button>
+                    </p>
+            </form>
+            <script type="text/javascript ">
+                function a() {
+                    var kullanici_adi = document.getElementById("id ").value;
+                    var sifre = document.getElementById("sifre ").value;
+                    if (sifre == null || sifre == " " || kullanici_adi == null || kullanici_adi == " ") {
+                        alert("Bütün Alanları Doldurmak Zorunludur.! ");
+                    }
+                }
+            </script>
+        </div>
+    </div>
